@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    outline: 1px solid limegreen; /* Isso mostra as bordas de todos os elementos */
+  }
+
+
 :root {  
     --bg-color: #FFFFFF;
     --black-color: #000000;
@@ -45,6 +51,9 @@ nav a {
 }
 
 .background {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* espaçamento entre main e botão */
     width: 100%;
     height: 100vh;
     background-image: url(/src/assets/img/imagem-de-fundo.svg);
@@ -53,11 +62,27 @@ nav a {
 }
 
 .main-pag1 {
-    border: 1px solid red;
-    width: 470px;
-    height: 166px;
+    display: flex;
+    flex-direction: column;
+    gap: 41px;
+    width: 100%;
+    max-width: 470px;
+    height: 178px;
+    margin: 105px 0 21px 26px;
+
 }
 
-#h1 {
+.main-pag1 h1 {
     font-size: 48px;
+}
+
+.main-pag1 p {
+    font-size: 18px;
+}
+
+
+#button-pag1 {
+    width: 199px;
+    height: 55px;
+    margin-left: 26px;
 }
