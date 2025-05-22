@@ -54,11 +54,17 @@ nav a {
     display: flex;
     flex-direction: column;
     gap: 20px; /* espaçamento entre main e botão */
+}
+
+.background-pag1 {
     width: 100%;
     height: 100vh;
-    background-image: url(/src/assets/img/imagem-de-fundo.svg);
+    background-image: url(../assets/img/imagem-de-fundo.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 150px;
+    padding-left: 120px;
+    padding-bottom: 239px;
 }
 
 .main-pag1 {
@@ -69,11 +75,18 @@ nav a {
     max-width: 470px;
     height: 178px;
     margin: 105px 0 21px 26px;
-
+    width: 470px;
+    height: auto;                /* Deixa a altura crescer conforme o conteúdo */
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
 }
 
 .main-pag1 h1 {
     font-size: 48px;
+    font-weight: 100;
+    color: #003C5A;
+    line-height: 40px;
 }
 
 .main-pag1 p {
@@ -85,4 +98,23 @@ nav a {
     width: 199px;
     height: 55px;
     margin-left: 26px;
+    margin-top: 40px;
+    color: #003C5A;
+}
+
+.main-pag1 button {
+    width: 199px;
+    height: 55px;
+    background-color: #003C5A;
+    margin-top: 30px;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+.pag2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
 }
